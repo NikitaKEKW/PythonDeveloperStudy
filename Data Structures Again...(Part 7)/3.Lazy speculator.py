@@ -5,4 +5,4 @@ for key, value in rates.items():
     if value == min_rates:
         bank = key
         break
-print("Наиболее привлекательный курс доллара в банке - ", bank)
+print("Наиболее привлекательный курс доллара в банке - ", bank, "- {min_rates}".format(min_rates=min_rates))
