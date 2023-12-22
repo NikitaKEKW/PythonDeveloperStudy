@@ -1,10 +1,10 @@
 import re
-
 text = "hello, word of word"
 words_popularity = {}
 chars_popularity = {}
+clean_text = text.replace(" ", "").replace(",", "")
 
-for char in text:
+for char in clean_text:
     chars_popularity[char] = chars_popularity.setdefault(char, 0) + 1
 print('Популярность букв:', chars_popularity)
 
